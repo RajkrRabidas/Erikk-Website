@@ -16,7 +16,6 @@ html {
 
 main {
   width: 100%;
-  padding: 1.5rem;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -26,9 +25,10 @@ main header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 2rem 0 4rem;
 }
 main header img {
-  width: 4.1rem;
+  width: 5.1rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -45,6 +45,7 @@ main .hero-text {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  padding: 1rem 2rem;
 }
 main .hero-text img {
   width: 100%;
@@ -52,6 +53,7 @@ main .hero-text img {
      object-fit: cover;
 }
 main .hero-text .text {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-family: monospace;
@@ -65,6 +67,7 @@ main .hero-image {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  padding: 0 2rem;
 }
 main .hero-image .top {
   width: 100%;
@@ -118,6 +121,7 @@ main .our-services {
   flex-direction: column;
   gap: 1.5em;
   margin-top: 4rem;
+  padding: 0 2rem;
 }
 main .our-services .service {
   width: 100%;
@@ -195,6 +199,7 @@ main .our-services .service .right img {
 .work .work-section {
   width: 100%;
   padding-top: 4rem;
+  padding: 1rem 2rem;
 }
 .work .work-section .work-logo {
   width: 100%;
@@ -331,6 +336,7 @@ main .our-services .service .right img {
   display: flex;
   gap: 1em;
   flex-direction: column;
+  padding: 1rem 2rem;
 }
 .verticle-text .top {
   width: 100%;
@@ -363,15 +369,109 @@ main .our-services .service .right img {
   opacity: 0.6;
 }
 
+.Clients .main-client {
+  padding-top: 4rem;
+  padding: 1rem 2rem;
+}
+.Clients .main-client .client-logo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 4rem;
+}
+.Clients .main-client .client-logo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Clients .main-client .all-list {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  flex-direction: column;
+  display: flex;
+}
+.Clients .main-client .all-list hr {
+  opacity: 0.5;
+}
+.Clients .main-client .all-list .clints-list {
+  grid-column-gap: 2rem;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+}
+.Clients .main-client .all-list .clints-list .dates h3 {
+  font-size: 1.3em;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.Clients .main-client .all-list .clints-list .heading h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.Clients .main-client .all-list .clints-list .Branding p {
+  font-size: 1.2em;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+}
+
+.title {
+  font-size: clamp(3rem, 10vw, 15rem);
+  font-weight: 200;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+.btn i {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.btn {
+  padding: 12px 23px;
+  font-size: 1.1rem;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #ddd;
+}
+
 @media (min-width: 900px) {
   main {
-    padding: 2.3rem 4.5rem;
     gap: 4rem;
   }
   main header .navbar {
     display: flex;
     align-items: center;
     gap: 3rem;
+    padding: 0 2rem;
   }
   main header .navbar .nav-links {
     display: flex;
@@ -525,5 +625,29 @@ main .our-services .service .right img {
   }
   main .verticle-text .bottom .text p {
     margin-top: auto;
+  }
+  main .Clients {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-rows: auto;
+    grid-template-columns: 0.47fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+  main .Clients .main-client {
+    grid-area: 1/2/2/3;
+  }
+  main .Clients .main-client .client-logo {
+    width: 60%;
+    margin-left: auto;
+  }
+  main .Clients .main-client .all-list .clints-list {
+    grid-row-gap: 2rem;
+    grid-template-columns: 40px 1fr auto;
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
