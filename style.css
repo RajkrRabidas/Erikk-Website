@@ -432,25 +432,17 @@ main .our-services .service .right img {
   background-color: #000;
   color: white;
 }
-
-.title {
+.hero .title {
   font-size: clamp(3rem, 10vw, 15rem);
   font-weight: 200;
   margin: 0;
 }
-
-.subtitle {
+.hero .subtitle {
   font-size: clamp(1rem, 4vw, 1.5rem);
   text-align: center;
   margin: 10px 0 30px;
 }
-
-.btn i {
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-
-.btn {
+.hero .btn {
   padding: 12px 23px;
   font-size: 1.1rem;
   background: white;
@@ -459,7 +451,11 @@ main .our-services .service .right img {
   border-radius: 25px;
   transition: 0.3s ease-in-out;
 }
-.btn:hover {
+.hero .btn i {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.hero .btn:hover {
   background: #ddd;
 }
 
